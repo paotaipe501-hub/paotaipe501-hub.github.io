@@ -30,10 +30,11 @@ En esta sección se presentarán algunos de los proyectos desarrollados durante 
 ## 🌐 Redes sociales
 
 * GitHub: [Mi perfil](https://github.com/)
+* Instagram: https://www.instagram.com/pao__ttp?xtok=MTl1Ym8xZTF6amVrdQ==
 
 ## 📍 Ubicación
 
-Ambato, Tungurahua, Ecuador.
+Salcedo, Tungurahua, Ecuador.
 
 ## 🚀 Publicación
 
