@@ -1,16 +1,40 @@
-## Hi there 👋
+# 🌷 Portafolio Personal – Paola Alexandra Taipe Tixilema
 
-<!--
-**paotaipe501-hub/paotaipe501-hub** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+¡Bienvenido/a a mi portafolio personal!
 
-Here are some ideas to get you started:
+## 👩🏻‍💻 Sobre mí
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Soy estudiante de Ingeniería de Software en la Universidad Técnica de Ambato, interesada en el desarrollo de software, las bases de datos y las tecnologías informáticas.
+
+## 🎓 Formación académica
+
+* Universidad: Universidad Técnica de Ambato.
+* Carrera: Ingeniería de Software.
+* Ubicación: Ambato, Tungurahua, Ecuador.
+
+## 💻 Tecnologías y herramientas
+
+* Java
+* SQL
+* HTML5
+* CSS3
+* JavaScript
+* Git y GitHub
+* Oracle Database
+* Apache NetBeans
+
+## 📂 Proyectos
+
+En esta sección se presentarán algunos de los proyectos desarrollados durante mi formación académica.
+
+## 🌐 Redes sociales
+
+* GitHub: [Mi perfil](https://github.com/)
+
+## 📍 Ubicación
+
+Ambato, Tungurahua, Ecuador.
+
+## 🚀 Publicación
+
+Este portafolio será publicado mediante GitHub Pages.
