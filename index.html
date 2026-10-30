@@ -3,101 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paola Taipe | Portafolio Personal</title>
+    <title>Paola Taipe | Portafolio</title>
+    <meta name="description" content="Portafolio de Paola Taipe, estudiante de Software en la Universidad Técnica de Ambato.">
+
+    <!-- PLUGINS (por CDN) -->
+    <!-- 1. Font Awesome: iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- 2. AOS: animaciones al hacer scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+    <!-- MENÚ -->
     <header>
         <nav>
-            <h2>Paola Taipe.</h2>
-
-            <ul>
+            <h2>Paola<span>.</span></h2>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+            <ul id="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#plugins">Plugins</a></li>
+                <li><a href="#ubicacion">De dónde soy</a></li>
+                <li><a href="#pages">GitHub Pages</a></li>
+                <li><a href="#contacto">Redes</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-
-        <section id="inicio" class="inicio">
-            <div class="presentacion">
-                <p class="subtitulo">¡Hola! Bienvenido/a a mi espacio</p>
-
-                <h1>Soy Paola Alexandra<br>
-                    <span>Taipe Tixilema</span>
-                </h1>
-
-                <h3>Estudiante de Ingeniería de Software</h3>
-
-                <p>
-                    Me apasiona la tecnología, el desarrollo de software
-                    y aprender nuevas herramientas para transformar ideas
-                    en soluciones digitales.
-                </p>
-
-                <a href="#proyectos" class="boton">Conoce mis proyectos</a>
-            </div>
-        </section>
-
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-
-            <p>
-                Soy estudiante de Ingeniería de Software en la
-                Universidad Técnica de Ambato, Ecuador.
-                Me interesa el desarrollo de aplicaciones,
-                las bases de datos y la innovación tecnológica.
-            </p>
-        </section>
-
-        <section id="habilidades">
-            <h2>Mis habilidades</h2>
-            <div class="tarjetas">
-                <div class="tarjeta">Java</div>
-                <div class="tarjeta">SQL</div>
-                <div class="tarjeta">HTML</div>
-                <div class="tarjeta">CSS</div>
-                <div class="tarjeta">JavaScript</div>
-                <div class="tarjeta">Git y GitHub</div>
-                <div class="tarjeta">Oracle</div>
-                <div class="tarjeta">NetBeans</div>
-            </div>
-        </section>
-
-        <section id="proyectos">
-            <h2>Mis proyectos</h2>
-
-            <p>
-                Aquí presentaré algunos de los proyectos
-                desarrollados durante mi formación universitaria.
-            </p>
-        </section>
-
-        <section id="contacto">
-            <h2>Conectemos</h2>
-
-            <p>Ambato, Tungurahua, Ecuador.</p>
-
-            <a href="https://github.com/" target="_blank">
-                Mi GitHub
+    <!-- 1. BANNER -->
+    <section id="inicio" class="banner">
+        <div class="banner-texto">
+            <p class="subtitulo">PORTAFOLIO PERSONAL</p>
+            <h1>Hola, soy <span>Paola Taipe</span></h1>
+            <h3>Estudiante de <span id="typed"></span></h3>
+            <p>Carrera de Software · FISEI · Universidad Técnica de Ambato</p>
+            <a href="#proyectos" class="boton">Ver mis proyectos</a>
+            <a href="https://github.com/paotaipe501-hub" target="_blank" class="boton boton-borde">
+                <i class="fa-brands fa-github"></i> GitHub
             </a>
-        </section>
+        </div>
+        <div class="banner-imagen" data-aos="zoom-in">
+            <div class="circulo">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- 2. DESCRIPCIÓN -->
+    <section id="sobre-mi">
+        <h2 data-aos="fade-up">Sobre mí</h2>
+        <p data-aos="fade-up">
+            Soy Paola Alexandra Taipe Tixilema, estudiante de cuarto nivel de la Carrera de Software
+            en la Facultad de Ingeniería en Sistemas, Electrónica e Industrial (FISEI) de la
+            Universidad Técnica de Ambato. Me interesa el desarrollo web, las bases de datos y
+            las metodologías ágiles. Me gusta construir aplicaciones útiles, ordenadas y fáciles de usar.
+        </p>
+        <div class="datos" data-aos="fade-up">
+            <div class="dato"><i class="fa-solid fa-graduation-cap"></i><span>Cuarto nivel - A</span></div>
+            <div class="dato"><i class="fa-solid fa-code"></i><span>Desarrollo de software</span></div>
+            <div class="dato"><i class="fa-solid fa-database"></i><span>Bases de datos</span></div>
+            <div class="dato"><i class="fa-solid fa-network-wired"></i><span>Redes</span></div>
+        </div>
+    </section>
+
+    <!-- 3. PROYECTOS TRABAJADOS -->
+    <section id="proyectos">
+        <h2 data-aos="fade-up">Proyectos trabajados</h2>
+        <div class="grid">
+            <article class="proyecto" data-aos="fade-up">
+                <i class="fa-solid fa-users"></i>
+                <h4>CRUD de estudiantes</h4>
+                <p>Proyecto web en PHP con patrón MVC. Registro, edición y eliminación de estudiantes con jQuery EasyUI y Bootstrap.</p>
+                <div class="etiquetas"><span>PHP</span><span>MySQL</span><span>EasyUI</span></div>
+            </article>
+            <article class="proyecto" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-qrcode"></i>
+                <h4>Sistema QR de equipos</h4>
+                <p>Aplicación en Java que lee códigos QR con una cámara USB para identificar y administrar equipos.</p>
+                <div class="etiquetas"><span>Java</span><span>CRUD</span><span>QR</span></div>
+            </article>
+            <article class="proyecto" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-route"></i>
+                <h4>RutaEC</h4>
+                <p>Proyecto en equipo gestionado con Scrum en Jira y control de versiones con Git y GitHub.</p>
+                <div class="etiquetas"><span>Jira</span><span>Git</span><span>Scrum</span></div>
+            </article>
+            <article class="proyecto" data-aos="fade-up">
+                <i class="fa-solid fa-building-columns"></i>
+                <h4>Sistema bancario BANCO_SW</h4>
+                <p>Procedimientos almacenados en Oracle PL/SQL para depósitos, retiros y transferencias.</p>
+                <div class="etiquetas"><span>Oracle</span><span>PL/SQL</span></div>
+            </article>
+            <article class="proyecto" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-chart-column"></i>
+                <h4>Reportes de estudiantes</h4>
+                <p>Aplicación en NetBeans con reportes en JasperReports: estudiantes por curso y notas aprobadas o reprobadas.</p>
+                <div class="etiquetas"><span>Java</span><span>JasperReports</span></div>
+            </article>
+            <article class="proyecto" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-diagram-project"></i>
+                <h4>Redes en Packet Tracer</h4>
+                <p>Topologías con VLAN, VTP, STP, EtherChannel y redes inalámbricas con controlador WLC.</p>
+                <div class="etiquetas"><span>Cisco</span><span>VLAN</span><span>WLAN</span></div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 4. PLUGINS -->
+    <section id="plugins">
+        <h2 data-aos="fade-up">Plugins y tecnologías</h2>
+        <p class="centro" data-aos="fade-up">Plugins utilizados en esta página web:</p>
+        <div class="grid">
+            <div class="plugin" data-aos="flip-left">
+                <i class="fa-brands fa-font-awesome"></i>
+                <h4>Font Awesome</h4>
+                <p>Librería de iconos para las redes sociales, proyectos y menú.</p>
+            </div>
+            <div class="plugin" data-aos="flip-left" data-aos-delay="100">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h4>AOS</h4>
+                <p>Animate On Scroll: anima las secciones cuando aparecen en pantalla.</p>
+            </div>
+            <div class="plugin" data-aos="flip-left" data-aos-delay="200">
+                <i class="fa-solid fa-keyboard"></i>
+                <h4>Typed.js</h4>
+                <p>Crea el efecto de texto que se escribe solo en el banner.</p>
+            </div>
+            <div class="plugin" data-aos="flip-left" data-aos-delay="300">
+                <i class="fa-brands fa-google"></i>
+                <h4>Google Fonts y Maps</h4>
+                <p>Tipografías Playfair Display y DM Sans, y el mapa de ubicación.</p>
+            </div>
+        </div>
+        <p class="centro" data-aos="fade-up" style="margin-top:40px">Tecnologías que manejo:</p>
+        <div class="tarjetas" data-aos="fade-up">
+            <div class="tarjeta"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="tarjeta"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+            <div class="tarjeta"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="tarjeta"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="tarjeta"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="tarjeta"><i class="fa-solid fa-database"></i> Oracle / SQL</div>
+            <div class="tarjeta"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="tarjeta"><i class="fa-brands fa-jira"></i> Jira</div>
+        </div>
+    </section>
+
+    <!-- 5. DE DÓNDE SOY -->
+    <section id="ubicacion">
+        <h2 data-aos="fade-up">¿De dónde soy?</h2>
+        <div class="ubicacion">
+            <div class="ubicacion-texto" data-aos="fade-right">
+                <p><i class="fa-solid fa-location-dot"></i> <strong>Ciudad:</strong> Ambato</p>
+                <p><i class="fa-solid fa-map"></i> <strong>Provincia:</strong> Tungurahua</p>
+                <p><i class="fa-solid fa-flag"></i> <strong>País:</strong> Ecuador</p>
+                <p><i class="fa-solid fa-school"></i> <strong>Universidad:</strong> Universidad Técnica de Ambato</p>
+                <p class="nota">Ambato es conocida como la "Tierra de las Flores y de las Frutas".</p>
+            </div>
+            <div class="mapa" data-aos="fade-left">
+                <iframe
+                    src="https://www.google.com/maps?q=Universidad+T%C3%A9cnica+de+Ambato,Ambato,Ecuador&output=embed"
+                    loading="lazy" title="Mapa de Ambato"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. GITHUB PAGES -->
+    <section id="pages">
+        <h2 data-aos="fade-up">Publicado con GitHub Pages</h2>
+        <div class="pages-caja" data-aos="zoom-in">
+            <i class="fa-brands fa-github"></i>
+            <p>
+                Este portafolio es un proyecto publicado con <strong>GitHub Pages</strong>, el servicio gratuito de
+                GitHub que convierte un repositorio en una página web pública. Cualquier persona puede visitarla
+                desde el siguiente enlace:
+            </p>
+            <a class="enlace" href="https://paotaipe501-hub.github.io/paotaipe501-hub/" target="_blank">
+                https://paotaipe501-hub.github.io/paotaipe501-hub/
+            </a>
+            <div class="pasos">
+                <span>1. Repositorio público</span>
+                <span>2. Subir HTML, CSS y JS</span>
+                <span>3. Settings → Pages</span>
+                <span>4. Rama main / root</span>
+            </div>
+            <a href="https://github.com/paotaipe501-hub/paotaipe501-hub" target="_blank" class="boton">
+                <i class="fa-solid fa-code-branch"></i> Ver repositorio
+            </a>
+        </div>
+    </section>
+
+    <!-- 7. REDES SOCIALES -->
+    <section id="contacto">
+        <h2 data-aos="fade-up">Redes sociales</h2>
+        <p data-aos="fade-up">¡Conectemos! Puedes encontrarme en:</p>
+        <div class="redes" data-aos="fade-up">
+            <a href="https://github.com/paotaipe501-hub" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/pao__ttp?xtok=MTl1Ym8xZTF6amVrdQ==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2026 Paola Alexandra Taipe Tixilema.</p>
-        <p>Diseñado con dedicación ♡</p>
+        <p>© 2026 Paola Taipe · Universidad Técnica de Ambato · Hecho con ♡ y GitHub Pages</p>
     </footer>
 
+    <!-- 3. Typed.js: texto animado -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
