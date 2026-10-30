@@ -404,3 +404,16 @@ footer {
 
     .ubicacion { grid-template-columns: 1fr; }
 }
+
+.circulo {
+    padding: 8px;
+    overflow: hidden;
+}
+
+.circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
